@@ -207,6 +207,7 @@ ol {
 }
 
 .header-inner {
+    position: relative;
     width: 100%;
     max-width: var(--container-width);
     margin: 0 auto;
@@ -249,9 +250,13 @@ ol {
 @media (min-width: 769px) {
     .header-info {
         display: block;
-        margin-left: auto;
         /* Pushes to the right */
-        margin-right: 0;
+    }
+
+    .global-nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
