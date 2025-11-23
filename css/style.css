@@ -1041,48 +1041,17 @@ ol {
 .menu-layout {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    max-width: 1000px;
+    gap: 0;
+    max-width: 800px;
     margin: 0 auto;
     position: relative;
 }
 
-.menu-row-group {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-@media (min-width: 769px) {
-    .menu-row-group {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-    }
-
-    /* Vertical Divider using background on layout */
-    .menu-layout::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        width: 1px;
-        background-color: var(--color-primary);
-        transform: translateX(-50%);
-    }
-
-    /* Adjust padding for items to clear the line */
-    .menu-row-group .menu-category:first-child {
-        padding-right: 30px;
-    }
-
-    .menu-row-group .menu-category:last-child {
-        padding-left: 30px;
-    }
-}
-
 .menu-category {
+    margin-bottom: 80px;
+}
+
+.menu-category:last-child {
     margin-bottom: 0;
 }
 
