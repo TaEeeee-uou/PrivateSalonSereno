@@ -145,6 +145,15 @@ ol {
     color: #fff;
 }
 
+.btn--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #7a8f84;
+}
+
 .btn--outline {
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
