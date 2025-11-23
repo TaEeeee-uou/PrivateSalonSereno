@@ -699,6 +699,13 @@ ol {
     text-align: center;
 }
 
+.view-more-label {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
 .link-arrow {
     font-size: 0.9rem;
     letter-spacing: 0.1em;
