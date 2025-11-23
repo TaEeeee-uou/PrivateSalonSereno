@@ -233,6 +233,10 @@ ol {
     font-size: 0.8rem;
 }
 
+.header-info p {
+    margin: 0;
+}
+
 @media (min-width: 769px) {
     .header-info {
         display: block;
