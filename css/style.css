@@ -1167,40 +1167,28 @@ ol {
 .menu-owner-comment {
     background-color: #fffcf5;
     /* Very light beige */
-    border: 1px solid var(--color-accent);
-    padding: 20px;
-    border-radius: 8px;
+    border: 1px solid rgba(196, 168, 126, 0.4);
+    /* Subtle accent border */
+    padding: 25px;
+    border-radius: 4px;
     text-align: center;
-    position: relative;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-family: var(--font-serif);
 }
 
-.menu-owner-comment::before {
-    content: "Owner's Voice";
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--color-accent);
-    color: #fff;
-    font-size: 0.7rem;
-    padding: 2px 12px;
-    border-radius: 20px;
-    letter-spacing: 0.1em;
-    font-family: var(--font-sans);
-}
+/* Removed ::before "Owner's Voice" label */
 
 .comment-title {
-    font-family: var(--font-serif);
     color: var(--color-primary);
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 1rem;
+    letter-spacing: 0.05em;
 }
 
 .comment-text {
     font-size: 0.9rem;
-    line-height: 1.8;
+    line-height: 2;
     color: var(--color-text);
 }
 
