@@ -962,24 +962,36 @@ ol {
 /* ==========================================================================
    Page Header (Subpages)
    ========================================================================== */
+/* ==========================================================================
+   Page Header (Subpages)
+   ========================================================================== */
 .page-header {
     background-color: var(--color-primary-light);
-    padding: 120px 0 60px;
+    padding: 180px 0 80px;
+    /* Increased top padding to avoid overlap */
     text-align: center;
     margin-bottom: 60px;
 }
 
 .page-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    /* Larger font size */
     color: var(--color-primary);
-    letter-spacing: 0.1em;
-    margin-bottom: 10px;
+    letter-spacing: 0.15em;
+    margin-bottom: 15px;
+    font-family: var(--font-serif);
+    /* Ensure serif font */
+    font-weight: 500;
 }
 
 .page-subtitle {
-    font-size: 0.9rem;
-    color: var(--color-text-light);
-    letter-spacing: 0.1em;
+    font-size: 1rem;
+    color: var(--color-accent);
+    /* Use accent color */
+    letter-spacing: 0.3em;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* ==========================================================================
