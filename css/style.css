@@ -1164,6 +1164,46 @@ ol {
     font-size: 0.95rem;
 }
 
+.menu-owner-comment {
+    background-color: #fffcf5;
+    /* Very light beige */
+    border: 1px solid var(--color-accent);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.menu-owner-comment::before {
+    content: "Owner's Voice";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.1em;
+    font-family: var(--font-sans);
+}
+
+.comment-title {
+    font-family: var(--font-serif);
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.comment-text {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
 .u-highlight {
     background: linear-gradient(transparent 60%, #eef4f1 60%);
     display: inline;
