@@ -1181,3 +1181,42 @@ ol {
     background: linear-gradient(transparent 60%, #eef4f1 60%);
     display: inline;
 }
+
+/* ==========================================================================
+   CTA Section
+   ========================================================================== */
+
+.section--cta {
+    background-color: #f8f9f7;
+    padding: 80px 0;
+}
+
+.cta-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 60px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-family: var(--font-serif);
+    font-weight: 500;
+}
+
+.cta-text {
+    font-size: 1rem;
+    line-height: 2;
+    color: var(--color-text);
+    margin-bottom: 35px;
+}
+
+.btn--large {
+    padding: 18px 50px;
+    font-size: 1.1rem;
+}
