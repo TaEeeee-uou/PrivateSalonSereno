@@ -333,6 +333,56 @@ ol {
     }
 }
 
+/* Desktop Menu */
+@media (min-width: 769px) {
+    .global-nav {
+        display: block;
+    }
+
+    .global-nav ul {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .global-nav a {
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .global-nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 1px;
+        background-color: var(--color-primary);
+        transition: width 0.3s;
+    }
+
+    .global-nav a:hover::after {
+        width: 100%;
+    }
+
+    .nav-reserve-btn {
+        background-color: var(--color-accent);
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 4px;
+    }
+
+    .nav-reserve-btn:hover {
+        opacity: 0.8;
+    }
+
+    .nav-reserve-btn::after {
+        display: none;
+    }
+}
+
 /* Animation Classes */
 .is-visible {
     opacity: 1 !important;
