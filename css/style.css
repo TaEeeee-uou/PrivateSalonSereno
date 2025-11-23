@@ -1048,12 +1048,13 @@ ol {
 
 @media (min-width: 769px) {
     .menu-layout {
-        flex-direction: row;
-        gap: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
         position: relative;
     }
 
-    /* Vertical Divider */
+    /* Vertical Divider using background */
     .menu-layout::before {
         content: "";
         position: absolute;
@@ -1064,24 +1065,20 @@ ol {
         background-color: var(--color-primary);
         transform: translateX(-50%);
     }
-}
 
-.menu-column {
-    flex: 1;
-}
-
-@media (min-width: 769px) {
-    .menu-column:first-child {
-        padding-right: 60px;
+    /* Adjust padding for items to clear the line */
+    .menu-category:nth-child(odd) {
+        padding-right: 30px;
     }
 
-    .menu-column:last-child {
-        padding-left: 60px;
+    .menu-category:nth-child(even) {
+        padding-left: 30px;
     }
 }
 
 .menu-category {
-    margin-bottom: 60px;
+    margin-bottom: 0;
+    /* Grid handles gap */
 }
 
 .menu-category-title {
