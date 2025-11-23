@@ -1229,3 +1229,9 @@ ol {
     padding: 18px 50px;
     font-size: 1.1rem;
 }
+
+.cta-note {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    margin-top: 15px;
+}
