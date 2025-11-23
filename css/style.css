@@ -1026,3 +1026,125 @@ ol {
     background-color: var(--color-primary);
     color: #fff;
 }
+
+/* ==========================================================================
+   Menu Page
+   ========================================================================== */
+.section--menu-list {
+    background-color: var(--color-white);
+    /* Add a subtle paper texture if possible, or just white */
+    background-image: linear-gradient(to right, #f9f9f9 1px, transparent 1px),
+        linear-gradient(to bottom, #f9f9f9 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.menu-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+    .menu-layout {
+        flex-direction: row;
+        gap: 0;
+        position: relative;
+    }
+
+    /* Vertical Divider */
+    .menu-layout::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        background-color: var(--color-primary);
+        transform: translateX(-50%);
+    }
+}
+
+.menu-column {
+    flex: 1;
+}
+
+@media (min-width: 769px) {
+    .menu-column:first-child {
+        padding-right: 60px;
+    }
+
+    .menu-column:last-child {
+        padding-left: 60px;
+    }
+}
+
+.menu-category {
+    margin-bottom: 60px;
+}
+
+.menu-category-title {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary-light);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.menu-category-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.menu-items {
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+.menu-item dt {
+    font-weight: 500;
+}
+
+.menu-item dd {
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.menu-note {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.u-text-small {
+    font-size: 0.75rem;
+    display: block;
+    margin-top: 4px;
+}
+
+.menu-description {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.u-highlight {
+    background: linear-gradient(transparent 60%, #eef4f1 60%);
+    display: inline;
+}
