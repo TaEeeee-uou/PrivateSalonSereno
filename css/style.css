@@ -825,6 +825,12 @@ ol {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+@media (min-width: 769px) {
+    .brand-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .brand-item {
     background: #fff;
     padding: 20px;
