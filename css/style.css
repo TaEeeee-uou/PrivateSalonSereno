@@ -469,6 +469,7 @@ ol {
 .hero-sub {
     font-size: 1rem;
     color: var(--color-text-light);
+    text-align: center;
 }
 
 .scroll-down {
@@ -744,6 +745,7 @@ ol {
 .brand-text {
     font-size: 0.85rem;
     color: var(--color-text-light);
+    text-align: center;
 }
 
 /* ==========================================================================
@@ -899,4 +901,61 @@ ol {
     font-size: 0.75rem;
     border-top: 1px solid #444;
     padding-top: 20px;
+}
+
+/* ==========================================================================
+   Page Header (Subpages)
+   ========================================================================== */
+.page-header {
+    background-color: var(--color-primary-light);
+    padding: 120px 0 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    letter-spacing: 0.1em;
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+.pagination {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination a,
+.pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--color-text);
+    transition: all 0.3s;
+}
+
+.pagination a:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.pagination .current {
+    background-color: var(--color-primary);
+    color: #fff;
 }
