@@ -1044,17 +1044,23 @@ ol {
     gap: 60px;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+}
+
+.menu-row-group {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 @media (min-width: 769px) {
-    .menu-layout {
+    .menu-row-group {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 60px;
-        position: relative;
     }
 
-    /* Vertical Divider using background */
+    /* Vertical Divider using background on layout */
     .menu-layout::before {
         content: "";
         position: absolute;
@@ -1067,18 +1073,17 @@ ol {
     }
 
     /* Adjust padding for items to clear the line */
-    .menu-category:nth-child(odd) {
+    .menu-row-group .menu-category:first-child {
         padding-right: 30px;
     }
 
-    .menu-category:nth-child(even) {
+    .menu-row-group .menu-category:last-child {
         padding-left: 30px;
     }
 }
 
 .menu-category {
     margin-bottom: 0;
-    /* Grid handles gap */
 }
 
 .menu-category-title {
