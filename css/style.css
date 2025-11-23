@@ -632,11 +632,55 @@ ol {
     font-family: var(--font-serif);
     color: var(--color-text-light);
     font-size: 0.9rem;
+    flex-shrink: 0;
+    /* Prevent date from shrinking */
 }
 
 .topics-link {
     flex: 1;
     display: block;
+}
+
+/* Topics Feed (Full Page) */
+.topics-feed {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.topic-article {
+    margin-bottom: 60px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 60px;
+}
+
+.topic-article:last-child {
+    border-bottom: none;
+}
+
+.topic-header {
+    margin-bottom: 20px;
+}
+
+.topic-date {
+    display: block;
+    font-family: var(--font-serif);
+    color: var(--color-text-light);
+    margin-bottom: 10px;
+}
+
+.topic-title {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    line-height: 1.4;
+}
+
+.topic-body {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.topic-body p {
+    margin-bottom: 1.5em;
 }
 
 .view-more {
